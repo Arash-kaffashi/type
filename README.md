@@ -41,9 +41,10 @@ Constructors are set capitalized, `unless those custom constructors, defined by 
 Example:
 ```js
 // Capitalized
-type( new Array([1, 2, 3]) )                            // Array
+type( [1, 2, 3] )                                       // Array
 type( Boolean(1) )                                      // Boolean
-type( String('string') )                                // String
+type( true )                                            // Boolean
+type( 'string' )                                        // String
 
 // lowercase - informative
 type( document.querySelector('div') )                   // element
