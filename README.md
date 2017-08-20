@@ -24,6 +24,7 @@ type( undefined )                                       // undefined
 type( (function() { return arguments;})(1, 2, 3) )      // Arguments
 type( [1, 2, 3] )                                       // Array
 type( new Date() )                                      // Date
+type( document.createElement('div') )                   // element
 type( new Error() )                                     // Error
 type( function (){} )                                   // Function
 type( Math )                                            // Math
@@ -45,6 +46,7 @@ type( Boolean(1) )                                      // Boolean
 type( String('string') )                                // String
 
 // lowercase - informative
+type( document.querySelector('div') )                   // element
 type( 1 + +'string' )                                   // nan
 type( null )                                            // null
 type( new function(){}() )                              // anonymous user class
@@ -75,7 +77,7 @@ type( new Square() )                                    // Square
 var Foo = function() {},
     obj = new Foo();
 
-type( obj )                                       // Foo
+type( obj )                                             // Foo
 ```
 
 # Be Aware!
