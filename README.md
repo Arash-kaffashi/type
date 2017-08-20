@@ -72,9 +72,10 @@ type( new Square() )                                    // Square
 **Constructor Assigned to Variable**
 ```js
 //Constructor
-var Foo = function() {}
+var Foo = function() {},
+    obj = new Foo();
 
-type( new Foo() )                                       // Foo
+type( obj )                                       // Foo
 ```
 
 # Be Aware!
