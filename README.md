@@ -3,7 +3,7 @@ Function "type" that returns the correct type of given value, finally!
 
 **Usage**
 ```js
-type( item[, user_class])
+type(item[, user_class])
 ```
 * `item`: Item/value that you want the type
 * `user_class`: optionaly if you want to distinguish Object from User Defined Classes and Constructors. Default: true, true to distinguish.
@@ -40,7 +40,7 @@ Constructors are set capitalized, `unless those custom constructors, defined by 
 Example:
 ```js
 // Capitalized
-type(  )
+type( new Array([1, 2, 3]) )                            // Array
 type( Boolean(1) )                                      // Boolean
 type( String('string') )                                // String
 
