@@ -1,5 +1,12 @@
-# type
+# type.js
 Function "type" that returns the correct type of given value, finally!
+
+**Usage**
+```js
+type( item[, user_class])
+```
+* `item`: Item/value that you want the type
+* `user_class`: optionaly if you want to distinguish Object from User Defined Classes and Constructors. Default: true, true to distinguish.
 
 **[Primitives](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)**
 ```js
